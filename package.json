@@ -1,0 +1,21 @@
+{
+    "name": "glassdoor-job-finder-agent",
+    "version": "1.0.0",
+    "description": "Apify actor that finds Glassdoor jobs matching a CV and rates each job 0-10",
+    "type": "module",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "node src/main.js",
+        "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    },
+    "dependencies": {
+        "apify": "^3.2.2",
+        "crawlee": "^3.9.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
