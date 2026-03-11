@@ -1,0 +1,9 @@
+{
+    "actorSpecification": 1,
+    "name": "glassdoor-job-finder-agent",
+    "title": "Glassdoor Job Finder Agent",
+    "description": "Finds Glassdoor job listings that match your CV and rates each job from 0 to 10 based on how well it matches your skills and experience.",
+    "version": "1.0",
+    "input": "./INPUT_SCHEMA.json",
+    "dockerfile": "./Dockerfile"
+}

@@ -1,0 +1,50 @@
+{
+    "title": "Glassdoor Job Finder Agent Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "cvText": {
+            "title": "CV / Resume Text",
+            "type": "string",
+            "description": "Paste your CV or resume text here. The agent will extract your skills, experience, and job titles to find matching jobs.",
+            "editor": "textarea",
+            "minLength": 50
+        },
+        "searchKeywords": {
+            "title": "Job Search Keywords (optional)",
+            "type": "string",
+            "description": "Additional keywords to search for on Glassdoor (e.g., 'Python developer', 'Data scientist'). If empty, keywords are extracted from your CV.",
+            "editor": "textfield"
+        },
+        "location": {
+            "title": "Job Location",
+            "type": "string",
+            "description": "Location to search jobs in (e.g., 'New York, NY', 'London', 'Remote'). Leave empty for worldwide.",
+            "editor": "textfield",
+            "default": ""
+        },
+        "maxJobs": {
+            "title": "Maximum Number of Jobs",
+            "type": "integer",
+            "description": "Maximum number of job listings to scrape and rate.",
+            "default": 50,
+            "minimum": 1,
+            "maximum": 200
+        },
+        "withinLastMonth": {
+            "title": "Filter Jobs Within Last Month",
+            "type": "boolean",
+            "description": "When enabled, only shows jobs posted within the last 30 days. If fewer than 5 jobs are found within that period, shows all available jobs.",
+            "default": true
+        },
+        "minMatchScore": {
+            "title": "Minimum Match Score (0-10)",
+            "type": "integer",
+            "description": "Only include jobs with a match score at or above this value.",
+            "default": 0,
+            "minimum": 0,
+            "maximum": 10
+        }
+    },
+    "required": ["cvText"]
+}
