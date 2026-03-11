@@ -1,0 +1,11 @@
+{
+    "actorSpecification": 1,
+    "name": "glassdoor-job-finder",
+    "title": "Glassdoor Job Finder with CV Matching",
+    "description": "Finds jobs on Glassdoor that match your CV and rates each one with a score from 0 to 10 using AI.",
+    "version": "1.0.0",
+    "input": "./input_schema.json",
+    "meta": {
+        "templateId": "js-playwright"
+    }
+}

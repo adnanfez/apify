@@ -1,0 +1,20 @@
+{
+    "name": "glassdoor-job-finder",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Glassdoor job finder agent that scrapes job listings and rates them against your CV using AI",
+    "main": "src/main.js",
+    "scripts": {
+        "start": "node src/main.js",
+        "test": "node --experimental-vm-modules node_modules/.bin/jest --testPathPattern=tests/"
+    },
+    "dependencies": {
+        "apify": "^3.2.2",
+        "crawlee": "^3.9.2",
+        "openai": "^4.47.1",
+        "playwright": "^1.44.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
